@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+        <tr style="text-align: center;">
+            <th>Food ID</th>
+            <th>Food</th>
+            <th>Cuisine</th>
+            <th>Food Description</th>
+            <th>Price</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="text-align: center;" *ngFor="let dataItem of ProductsList">
+            <td>{{dataItem.ProductID}}</td>
+            <td>{{dataItem.ProductName}}</td>
+            <td>{{dataItem.Category}}</td>
+            <td>{{dataItem.ProductDescription}}</td>
+            <td>{{dataItem.PhotoFileName}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1">Order</button>
+            </td>
+        </tr>
+        <tr><td colspan="6" align="center"><button class="button" style="float:none!important;display:inline;">Proceed to Checkout</button></td></tr>
+    </tbody>
+</table>
