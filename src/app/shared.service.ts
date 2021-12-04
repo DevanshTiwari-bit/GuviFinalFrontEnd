@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 })
 export class SharedService {
   
-readonly APIUrl="http://devanshtiwari-001-site1.itempurl.com/";
+readonly APIUrl="https://restaurant20211204113414.azurewebsites.net";
   constructor(private http:HttpClient) { }
   getCatList():Observable<any[]>{
     return this.http.get<any>(this.APIUrl+'/api/category');
